@@ -11,7 +11,7 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ýêçàìåíàöèîííîå çàäàíèå ¹4" << endl << endl;
+	cout << endl << endl << "Ð­ÐºÐ·Ð°Ð¼ÐµÐ½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ â„–4" << endl << endl;
 
 	double *data(NULL);
 	int size(0);
@@ -21,7 +21,7 @@ int main(void)
 	int summaAfterIndexLastNegative(0);
 	bool isNegativElement(false);
 
-	cout << endl << "Ïîæàëóéñòà, ââåäèòå ðàçìåð ìàññèâà: ";
+	cout << endl << "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	cin >> size;
 
 	data = new double[size];
@@ -55,12 +55,12 @@ int main(void)
 	}
 
 	if (isNegativElement)
-		cout << endl << "Çíà÷åíèå ïîñëåäíåãî îòðèöàòåëüíîãî ýëåìåíòà ìàññèâà: " << 
-	lastNegativeElement << ". Åãî èíäåêñ: " << indexLastNegative << endl
-			<< "Ñóììà ýëåìåíòîâ, ðàñïîëîæåííûõ ïðàâåå ïîñëåäíåãî îòðèöàòåëüíîãî ýëåìåíòà: " 
+		cout << endl << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½ÐµÐ³Ð¾ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << 
+	lastNegativeElement << ". Ð•Ð³Ð¾ Ð¸Ð½Ð´ÐµÐºÑ: " << indexLastNegative << endl
+			<< "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð², Ñ€Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð½Ñ‹Ñ… Ð¿Ñ€Ð°Ð²ÐµÐµ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½ÐµÐ³Ð¾ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°: " 
 			<< summaAfterIndexLastNegative << endl;
 	else
-		cout << endl << "Â ìàññèâå íåò îòðèöàòåëüíûõ ýëåìåíòîâ!!!";
+		cout << endl << "Ð’ Ð¼Ð°ÑÑÐ¸Ð²Ðµ Ð½ÐµÑ‚ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²!!!";
 
 	delete[] data;
 

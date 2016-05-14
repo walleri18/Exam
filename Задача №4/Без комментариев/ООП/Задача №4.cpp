@@ -42,7 +42,7 @@ Array::~Array()
 
 void Array::sizeRequest()
 {
-	cout << endl << "Ïîæàëóéñòà, ââåäèòå ðàçìåð ìàññèâà: ";
+	cout << endl << "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	cin >> this->size;
 
 	this->createArray();
@@ -57,7 +57,7 @@ void Array::createArray()
 
 void Array::add()
 {
-	cout << endl << "Çàïîëíåíèå ìàññèâà:" << endl;
+	cout << endl << "Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°:" << endl;
 
 	for (int i = 0; i < size; i++)
 		data[i] = rand() % (100 - (-100) + 1) + (-100);
@@ -114,12 +114,12 @@ void Array::show()
 	}
 
 	if (isNegativElement)
-		cout << endl << "Çíà÷åíèå ïîñëåäíåãî îòðèöàòåëüíîãî ýëåìåíòà ìàññèâà: " 
-		<< this->lastNegativeElement << ". Åãî èíäåêñ: " << this->indexLastNegative << endl
-		<< "Ñóììà ýëåìåíòîâ, ðàñïîëîæåííûõ ïðàâåå ïîñëåäíåãî îòðèöàòåëüíîãî ýëåìåíòà: " 
+		cout << endl << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½ÐµÐ³Ð¾ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð¼Ð°ÑÑÐ¸Ð²Ð°: " 
+		<< this->lastNegativeElement << ". Ð•Ð³Ð¾ Ð¸Ð½Ð´ÐµÐºÑ: " << this->indexLastNegative << endl
+		<< "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð², Ñ€Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð½Ñ‹Ñ… Ð¿Ñ€Ð°Ð²ÐµÐµ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½ÐµÐ³Ð¾ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°: " 
 		<< this->summaAfterIndexLastNegative << endl;
 	else
-		cout << endl << "Â ìàññèâå íåò îòðèöàòåëüíûõ ýëåìåíòîâ!!!";
+		cout << endl << "Ð’ Ð¼Ð°ÑÑÐ¸Ð²Ðµ Ð½ÐµÑ‚ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²!!!";
 }
 
 
@@ -129,7 +129,7 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ýêçàìåíàöèîííîå çàäàíèå ¹4" << endl << endl;
+	cout << endl << endl << "Ð­ÐºÐ·Ð°Ð¼ÐµÐ½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ â„–4" << endl << endl;
 
 	Array mass;
 

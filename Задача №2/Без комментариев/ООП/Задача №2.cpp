@@ -33,13 +33,13 @@ void Grafic::show()
 {
 	this->calculate();
 
-	cout << endl << "Ðåçóëüòàòû ðàñ÷¸òà: Y(" << argument << ") = " 
+	cout << endl << "â€“ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ñ€Ð°ÑÑ‡Ð„Ñ‚Ð°: Y(" << argument << ") = " 
 	<< result << endl << endl;
 }
 
 void Grafic::setArgument()
 {
-	cout << endl << "Ââåäèòå àðãóìåíò X: ";
+	cout << endl << "Â¬Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð°Ñ€Ð³ÑƒÐ¼ÐµÐ½Ñ‚ X: ";
 	cin >> argument;
 }
 
@@ -62,7 +62,7 @@ int main(void)
 {
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << "Ýêçàìåíàöèîííîå çàäàíèå ¹2" << endl << endl;
+	cout << endl << "ÐÐºÐ·Ð°Ð¼ÐµÐ½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ Ñ”2" << endl << endl;
 
 	Grafic grafic;
 

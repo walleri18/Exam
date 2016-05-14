@@ -17,11 +17,11 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ýêàçàìåííàöèîííîå çàäàíèå ¹12" << endl << endl;
+	cout << endl << endl << "ÐÐºÐ°Ð·Ð°Ð¼ÐµÐ½Ð½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ Ñ”12" << endl << endl;
 
 	int size;
 
-	cout << "Ââåäèòå ðàçìåð ìàññèâà òèïà INT: ";
+	cout << "Â¬Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ñ‚Ð¸Ð¿Ð° INT: ";
 	cin >> size;
 
 	int *data = new int[size];
@@ -30,7 +30,7 @@ int main(void)
 		data[i] = rand() % (100 - (-100) + 1) + (-100);
 
 	cout << endl << endl
-		<< "Âûâîä íåñîðòèðîâàííîãî ìàññèâà: " << endl << endl;
+		<< "Â¬Ñ‹Ð²Ð¾Ð´ Ð½ÐµÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << data[i] << " ";
@@ -39,7 +39,7 @@ int main(void)
 
 	sort(data, size, '+');
 
-	cout << "Îòñîðòèðîâàííûé ìàññèâ ïî-âîçðîñòàíèþ: " << endl << endl;
+	cout << "ÑœÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² Ð¿Ð¾-Ð²Ð¾Ð·Ñ€Ð¾ÑÑ‚Ð°Ð½Ð¸ÑŽ: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << data[i] << " ";
@@ -48,7 +48,7 @@ int main(void)
 
 	sort(data, size, '-');
 
-	cout << "Îòñîðòèðîâàííûé ìàññèâ ïî-óáûâàíèþ: " << endl << endl;
+	cout << "ÑœÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² Ð¿Ð¾-ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << data[i] << " ";

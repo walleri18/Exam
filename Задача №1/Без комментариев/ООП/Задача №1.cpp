@@ -46,7 +46,7 @@ void Time::dataEntry()
 
 	do
 	{
-		cout << "Ââåäèòå ìîìåíò âðåìåíè â ôîðìàòå hh/mm/ss è íàæìèòå Enter(ôîðìàò 24 ÷àñà!!!): ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ðµ hh/mm/ss Ð¸ Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ Enter(Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ 24 Ñ‡Ð°ÑÐ°!!!): ";
 
 		cin >> hour >> tmp >> minute >> tmp >> second;
 
@@ -74,17 +74,17 @@ Time& Time::operator - (Time &obj)
 
 void Time::show()
 {
-	cout << endl << "×àñîâ = " << hour << " Ìèíóò = " 
-	<< minute << " Ñåêóíä = " << second << endl;
+	cout << endl << "Ð§Ð°ÑÐ¾Ð² = " << hour << " ÐœÐ¸Ð½ÑƒÑ‚ = " 
+	<< minute << " Ð¡ÐµÐºÑƒÐ½Ð´ = " << second << endl;
 }
 
 int main(void)
 {
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << "Ýêçàìåíàöèîííîå çàäàíèå ¹1" << endl << endl;
+	cout << endl << "Ð­ÐºÐ·Ð°Ð¼ÐµÐ½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ â„–1" << endl << endl;
 
-	cout << "Ðàñ÷¸ò èä¸ò â òå÷åíèè îäíèõ ñóòîê!!!" << endl << endl; 
+	cout << "Ð Ð°ÑÑ‡Ñ‘Ñ‚ Ð¸Ð´Ñ‘Ñ‚ Ð² Ñ‚ÐµÑ‡ÐµÐ½Ð¸Ð¸ Ð¾Ð´Ð½Ð¸Ñ… ÑÑƒÑ‚Ð¾Ðº!!!" << endl << endl; 
 	
 	Time time1();
 

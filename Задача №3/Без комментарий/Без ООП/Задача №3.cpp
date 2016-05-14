@@ -11,7 +11,7 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ýêçàìåíàöèîííîå çàäàíèå ¹3" << endl << endl;
+	cout << endl << endl << "Ð­ÐºÐ·Ð°Ð¼ÐµÐ½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ â„–3" << endl << endl;
 
 	int *data(NULL);
 	int size(0);
@@ -22,12 +22,12 @@ int main(void)
 	int maximumElement(0);
 	int numberElements(0);
 	
-	cout << endl << "Ïîæàëóéñòà, ââåäèòå ðàçìåð ìàññèâà: ";
+	cout << endl << "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	cin >> size;
 
 	data = new int[size];
 
-	cout << endl << "Çàïîëíåíèå ìàññèâà:" << endl;
+	cout << endl << "Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°:" << endl;
 
 	for (int i = 0; i < size; i++)
 		data[i] = rand() % (100 - (-100) + 1) + (-100);
@@ -76,11 +76,11 @@ int main(void)
 			cout << data[i] << endl << endl;
 	}
 
-	cout << endl << "Ìèíèìàëüíûé ýëåìåíò ìàññèâà: " << minimumElement 
-	<< ". Åãî èíäåêñ: " << indexMinimumElement << endl
-		<< "Ìàêñèìàëüíûé ýëåìåíò ìàññèâà: " << maximumElement 
-		<< ". Åãî èíäåêñ: " << indexMaximumElement << endl
-		<< "Êîëè÷åñòâî ýëåìåíòîâ ìàññèâà, ìåæäó ìàñèìàëüíûì çíà÷åíèå è ìèíèìàëüíûì: " 
+	cout << endl << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << minimumElement 
+	<< ". Ð•Ð³Ð¾ Ð¸Ð½Ð´ÐµÐºÑ: " << indexMinimumElement << endl
+		<< "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << maximumElement 
+		<< ". Ð•Ð³Ð¾ Ð¸Ð½Ð´ÐµÐºÑ: " << indexMaximumElement << endl
+		<< "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°, Ð¼ÐµÐ¶Ð´Ñƒ Ð¼Ð°ÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¼ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¼: " 
 		<< numberElements << endl;
 
 	delete[] data;

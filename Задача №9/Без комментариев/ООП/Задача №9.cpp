@@ -88,7 +88,7 @@ ostream & operator << (ostream &stream, DynamicArrayOfIntegers &object)
 	stream << endl;
 
 	for (int i = 0; i <= object.indexOfTheLast; i++)
-		stream << "Ýëåìåíò ¹" << i + 1 << ": " << right << object[i] << endl;
+		stream << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ â„–" << i + 1 << ": " << right << object[i] << endl;
 
 	return stream;
 }
@@ -99,7 +99,7 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ýêàçàìåííàöèîííîå çàäàíèå ¹9" << endl << endl;
+	cout << endl << endl << "Ð­ÐºÐ°Ð·Ð°Ð¼ÐµÐ½Ð½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ â„–9" << endl << endl;
 
 	DynamicArrayOfIntegers massiv;
 	

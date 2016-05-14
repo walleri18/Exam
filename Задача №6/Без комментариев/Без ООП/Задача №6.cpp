@@ -9,16 +9,16 @@ int main(void)
 {
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ýêçàìåíàöèîííîå çàäàíèå ¹6" << endl << endl
-		<< "Ââîäèòü ÒÎËÜÊÎ íà ÀÍÃËÈÉÑÊÎÌ" << endl << endl;
+	cout << endl << endl << "Ð­ÐºÐ·Ð°Ð¼ÐµÐ½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ â„–6" << endl << endl
+		<< "Ð’Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð¢ÐžÐ›Ð¬ÐšÐž Ð½Ð° ÐÐÐ“Ð›Ð˜Ð™Ð¡ÐšÐžÐœ" << endl << endl;
 
 	string stroka("");
 	string slovo("");
 
-	cout << "Ïîæàëóéñòà, ââåäèòå èññëåäóåìîå ñëîâî: ";
+	cout << "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸ÑÑÐ»ÐµÐ´ÑƒÐµÐ¼Ð¾Ðµ ÑÐ»Ð¾Ð²Ð¾: ";
 	getline(cin, slovo, '\n');
 
-	cout << "Ïîæàëóéñòà, ââåäèòå èññëåäóåìóþ ñòðîêó: ";
+	cout << "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸ÑÑÐ»ÐµÐ´ÑƒÐµÐ¼ÑƒÑŽ ÑÑ‚Ñ€Ð¾ÐºÑƒ: ";
 	getline(cin, stroka, '\n');
 	
 	int slovoLenght = slovo.length(), strokaLenght = stroka.length();
@@ -42,8 +42,8 @@ int main(void)
 				counterLetters[i]++;
 
 	for (int i = 0; i < slovoLenght; i++)
-		cout << endl << "Ñèìâîë \"" << slovoChar[i] 
-		<< "\" ïîâòîðÿëñÿ: " << counterLetters[i] << endl;
+		cout << endl << "Ð¡Ð¸Ð¼Ð²Ð¾Ð» \"" << slovoChar[i] 
+		<< "\" Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÐ»ÑÑ: " << counterLetters[i] << endl;
 	
 	delete[] slovoChar;
 	delete[] strokaChar;

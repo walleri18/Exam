@@ -60,7 +60,7 @@ const int Array<Type>::getSize() const
 template<class Type>
 void Array<Type>::sizeRequest()
 {
-	cout << endl << "Ïîæàëóéñòà ââåäèòå ðàçìåð âàøåãî ìàññèâà: ";
+	cout << endl << "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð²Ð°ÑˆÐµÐ³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	cin >> this->size;
 }
 
@@ -83,41 +83,41 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ýêçàìåíàöèîííîå çàäàíèå ¹8" << endl << endl;
+	cout << endl << endl << "Ð­ÐºÐ·Ð°Ð¼ÐµÐ½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ â„–8" << endl << endl;
 	
-	cout << "Ìàññèâ òèïà INT" << endl << endl;
+	cout << "ÐœÐ°ÑÑÐ¸Ð² Ñ‚Ð¸Ð¿Ð° INT" << endl << endl;
 
 	Array<int> array_int;
 	int min_int = array_int.getData()[0];
 	int max_int = array_int.getData()[0];
 	double arithmeticMeanInt = arithmeticMean(array_int.getData(), array_int.getSize(), min_int, max_int);
 
-	cout << endl << endl << "Ìàññèâ òèïà DOUBLE" << endl << endl;
+	cout << endl << endl << "ÐœÐ°ÑÑÐ¸Ð² Ñ‚Ð¸Ð¿Ð° DOUBLE" << endl << endl;
 
 	Array<double> array_double;
 	double min_double = array_double.getData()[0];
 	double max_double = array_double.getData()[0];
 	double arithmeticMeanDouble = arithmeticMean(array_double.getData(), array_double.getSize(), min_double, max_double);
 
-	cout << endl << endl << "Ìàññèâ òèïà CHAR" << endl << endl;
+	cout << endl << endl << "ÐœÐ°ÑÑÐ¸Ð² Ñ‚Ð¸Ð¿Ð° CHAR" << endl << endl;
 
 	Array<char> array_char;
 	char min_char = array_char.getData()[0];
 	char max_char = array_char.getData()[0];
 	double arithmeticMeanChar = arithmeticMean(array_char.getData(), array_char.getSize(), min_char, max_char);
 
-	cout << endl << endl << "Ìàññèâ òèïà int:" << endl
-		<< "Ñðåäíåå àðèôìåòè÷åñêîå: " << arithmeticMeanInt << endl
-		<< "Ìèíèìàëüíîå: " << min_int << endl
-		<< "Ìàêñèìàëüíîå: " << max_int << endl << endl
-		<< "Ìàññèâ òèïà double:" << endl
-		<< "Ñðåäíåå àðèôìåòè÷åñêîå: " << arithmeticMeanDouble << endl
-		<< "Ìèíèìàëüíîå: " << min_double << endl
-		<< "Ìàêñèìàëüíîå: " << max_double << endl << endl
-		<< "Ìàññèâ òèïà char:" << endl
-		<< "Ñðåäíåå àðèôìåòè÷åñêîå: " << arithmeticMeanChar << endl
-		<< "Ìèíèìàëüíîå: " << min_char << endl
-		<< "Ìàêñèìàëüíîå: " << max_char << endl << endl;
+	cout << endl << endl << "ÐœÐ°ÑÑÐ¸Ð² Ñ‚Ð¸Ð¿Ð° int:" << endl
+		<< "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ: " << arithmeticMeanInt << endl
+		<< "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ: " << min_int << endl
+		<< "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ: " << max_int << endl << endl
+		<< "ÐœÐ°ÑÑÐ¸Ð² Ñ‚Ð¸Ð¿Ð° double:" << endl
+		<< "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ: " << arithmeticMeanDouble << endl
+		<< "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ: " << min_double << endl
+		<< "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ: " << max_double << endl << endl
+		<< "ÐœÐ°ÑÑÐ¸Ð² Ñ‚Ð¸Ð¿Ð° char:" << endl
+		<< "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ: " << arithmeticMeanChar << endl
+		<< "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ: " << min_char << endl
+		<< "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ: " << max_char << endl << endl;
 
 	return 0;
 }

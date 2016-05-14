@@ -49,7 +49,7 @@ Array::~Array()
 
 void Array::sizeRequest()
 {
-	cout << endl << "Ïîæàëóéñòà, ââåäèòå ðàçìåð ìàññèâà: ";
+	cout << endl << "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	cin >> this->size;
 
 	this->createArray();
@@ -118,7 +118,7 @@ void Array::thinkPositive(int min, int max)
 
 void Array::add()
 {
-	cout << endl << "Çàïîëíåíèå ìàññèâà:" << endl;
+	cout << endl << "Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°:" << endl;
 
 	for (int i = 0; i < size; i++)
 		data[i] = rand() % (100 - (-100) + 1) + (-100);
@@ -139,11 +139,11 @@ void Array::show()
 			cout << this->data[i] << endl << endl;
 	}
 
-	cout << endl << "Ìèíèìàëüíûé ýëåìåíò ìàññèâà: " << this->minimumElement 
-	<< ". Åãî èíäåêñ: " << this->indexMinimumElement << endl
-		<< "Ìàêñèìàëüíûé ýëåìåíò ìàññèâà: " << this->maximumElement 
-		<< ". Åãî èíäåêñ: " << this->indexMaximumElement << endl
-		<< "Êîëè÷åñòâî ýëåìåíòîâ ìàññèâà, ìåæäó ìàñèìàëüíûì çíà÷åíèå è ìèíèìàëüíûì: " 
+	cout << endl << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << this->minimumElement 
+	<< ". Ð•Ð³Ð¾ Ð¸Ð½Ð´ÐµÐºÑ: " << this->indexMinimumElement << endl
+		<< "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << this->maximumElement 
+		<< ". Ð•Ð³Ð¾ Ð¸Ð½Ð´ÐµÐºÑ: " << this->indexMaximumElement << endl
+		<< "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°, Ð¼ÐµÐ¶Ð´Ñƒ Ð¼Ð°ÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¼ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¸ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¼: " 
 		<< this->numberElements << endl;
 }
 
@@ -164,7 +164,7 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ýêçàìåíàöèîííîå çàäàíèå ¹3" << endl << endl;
+	cout << endl << endl << "Ð­ÐºÐ·Ð°Ð¼ÐµÐ½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ â„–3" << endl << endl;
 
 	Array massiv;
 

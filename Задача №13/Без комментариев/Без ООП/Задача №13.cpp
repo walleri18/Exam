@@ -20,11 +20,11 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ýêàçàìåííàöèîííîå çàäàíèå ¹12" << endl << endl;
+	cout << endl << endl << "Ð­ÐºÐ°Ð·Ð°Ð¼ÐµÐ½Ð½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ â„–12" << endl << endl;
 
 	int size;
 
-	cout << "Ââåäèòå ðàçìåð ìàññèâà òèïà INT: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ñ‚Ð¸Ð¿Ð° INT: ";
 	cin >> size;
 
 	int *dataInt = new int[size];
@@ -33,7 +33,7 @@ int main(void)
 		dataInt[i] = rand() % (100 - (-100) + 1) + (-100);
 
 	cout << endl << endl
-		<< "Âûâîä íåñîðòèðîâàííîãî ìàññèâà: " << endl << endl;
+		<< "Ð’Ñ‹Ð²Ð¾Ð´ Ð½ÐµÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << dataInt[i] << " ";
@@ -42,7 +42,7 @@ int main(void)
 
 	sort(dataInt, size, '+');
 
-	cout << "Îòñîðòèðîâàííûé ìàññèâ ïî-âîçðîñòàíèþ: " << endl << endl;
+	cout << "ÐžÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² Ð¿Ð¾-Ð²Ð¾Ð·Ñ€Ð¾ÑÑ‚Ð°Ð½Ð¸ÑŽ: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << dataInt[i] << " ";
@@ -51,14 +51,14 @@ int main(void)
 
 	sort(dataInt, size, '-');
 
-	cout << "Îòñîðòèðîâàííûé ìàññèâ ïî-óáûâàíèþ: " << endl << endl;
+	cout << "ÐžÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² Ð¿Ð¾-ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << dataInt[i] << " ";
 
 	cout << endl << endl;
 
-	cout << "Ââåäèòå ðàçìåð ìàññèâà òèïà DOUBLE: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ñ‚Ð¸Ð¿Ð° DOUBLE: ";
 	cin >> size;
 
 	double *dataDouble = new double[size];
@@ -67,7 +67,7 @@ int main(void)
 		dataDouble[i] = rand() % (100 - (-100) + 1) + (-100) + 0.5;
 
 	cout << endl << endl
-		<< "Âûâîä íåñîðòèðîâàííîãî ìàññèâà: " << endl << endl;
+		<< "Ð’Ñ‹Ð²Ð¾Ð´ Ð½ÐµÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << dataDouble[i] << " ";
@@ -76,7 +76,7 @@ int main(void)
 
 	sort(dataDouble, size, '+');
 
-	cout << "Îòñîðòèðîâàííûé ìàññèâ ïî-âîçðîñòàíèþ: " << endl << endl;
+	cout << "ÐžÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² Ð¿Ð¾-Ð²Ð¾Ð·Ñ€Ð¾ÑÑ‚Ð°Ð½Ð¸ÑŽ: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << dataDouble[i] << " ";
@@ -85,7 +85,7 @@ int main(void)
 
 	sort(dataDouble, size, '-');
 
-	cout << "Îòñîðòèðîâàííûé ìàññèâ ïî-óáûâàíèþ: " << endl << endl;
+	cout << "ÐžÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² Ð¿Ð¾-ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << dataDouble[i] << " ";

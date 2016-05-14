@@ -33,7 +33,7 @@ public:
 		Element *current = queue.head;
 
 		for (int i = 0; current != NULL; current = queue.getNextElement(current), i++)
-			stream << "Ýëåìåíò ¹" << i + 1 << ": " << right << current->data << endl;
+			stream << "ÐÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ñ”" << i + 1 << ": " << right << current->data << endl;
 
 		return stream;
 	}
@@ -102,39 +102,39 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ýêàçàìåííàöèîííîå çàäàíèå ¹11" << endl << endl;
+	cout << endl << endl << "ÐÐºÐ°Ð·Ð°Ð¼ÐµÐ½Ð½Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ Ñ”11" << endl << endl;
 
-	cout << "Î÷åðåäü INT:" << endl << endl;
+	cout << "ÑœÑ‡ÐµÑ€ÐµÐ´ÑŒ INT:" << endl << endl;
 
 	Queue<int> queueInt;
 
 	for (int i = 0; i < 10; i++)
 		queueInt.addElement(rand() % (100 - (-100) + 1) + (-100));
 
-	cout << "Èñõîäíûå ýëåìåíòû î÷åðåäè: " << queueInt 
-	<< endl << endl << "Óäàë¸ííûå ýëåìåíòû: " << endl << endl;
+	cout << "Â»ÑÑ…Ð¾Ð´Ð½Ñ‹Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸: " << queueInt 
+	<< endl << endl << "â€Ð´Ð°Ð»Ð„Ð½Ð½Ñ‹Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹: " << endl << endl;
 
 	for (int i = 0; i < 5; i++)
 	{
 		cout << queueInt.pullElement() << endl;
 	}
 
-	cout << endl << endl << "Ïîñëå óäàëåíèÿ ýëåìåíòû: " << queueInt << endl << endl;
+	cout << endl << endl << "Ñ•Ð¾ÑÐ»Ðµ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Â¤ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹: " << queueInt << endl << endl;
 
-	cout << "Î÷åðåäü DOUBLE:" << endl << endl;
+	cout << "ÑœÑ‡ÐµÑ€ÐµÐ´ÑŒ DOUBLE:" << endl << endl;
 
 	Queue<double> queueDouble;
 
 	for (int i = 0; i < 10; i++)
 		queueDouble.addElement(rand() % (100 - (-100) + 1) + (-100) + 0.5);
 
-	cout << "Èñõîäíûå ýëåìåíòû î÷åðåäè: " << queueDouble 
-	<< endl << endl << "Óäàë¸ííûå ýëåìåíòû: " << endl << endl;
+	cout << "Â»ÑÑ…Ð¾Ð´Ð½Ñ‹Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸: " << queueDouble 
+	<< endl << endl << "â€Ð´Ð°Ð»Ð„Ð½Ð½Ñ‹Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹: " << endl << endl;
 
 	for (int i = 0; i < 5; i++)
 		cout << queueDouble.pullElement() << endl;
 
-	cout << endl << endl << "Ïîñëå óäàëåíèÿ ýëåìåíòû: " << queueDouble << endl << endl;
+	cout << endl << endl << "Ñ•Ð¾ÑÐ»Ðµ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Â¤ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹: " << queueDouble << endl << endl;
 
 	return 0;
 }
