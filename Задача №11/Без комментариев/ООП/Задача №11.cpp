@@ -33,7 +33,7 @@ public:
 		Element *current = queue.head;
 
 		for (int i = 0; current != NULL; current = queue.getNextElement(current), i++)
-			stream << "Ёлемент є" << i + 1 << ": " << right << current->data << endl;
+			stream << "Элемент №" << i + 1 << ": " << right << current->data << endl;
 
 		return stream;
 	}
@@ -102,39 +102,39 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ёказаменнационное задание є11" << endl << endl;
+	cout << endl << endl << "Экзаменнационное задание №11" << endl << endl;
 
-	cout << "ќчередь INT:" << endl << endl;
+	cout << "Очередь INT:" << endl << endl;
 
 	Queue<int> queueInt;
 
 	for (int i = 0; i < 10; i++)
 		queueInt.addElement(rand() % (100 - (-100) + 1) + (-100));
 
-	cout << "»сходные элементы очереди: " << queueInt 
-	<< endl << endl << "”далЄнные элементы: " << endl << endl;
+	cout << "Исходные элементы очереди: " << queueInt 
+	<< endl << endl << "Удалённые элементы: " << endl << endl;
 
 	for (int i = 0; i < 5; i++)
 	{
 		cout << queueInt.pullElement() << endl;
 	}
 
-	cout << endl << endl << "ѕосле удалени¤ элементы: " << queueInt << endl << endl;
+	cout << endl << endl << "После удаления элементы: " << queueInt << endl << endl;
 
-	cout << "ќчередь DOUBLE:" << endl << endl;
+	cout << "Очередь DOUBLE:" << endl << endl;
 
 	Queue<double> queueDouble;
 
 	for (int i = 0; i < 10; i++)
 		queueDouble.addElement(rand() % (100 - (-100) + 1) + (-100) + 0.5);
 
-	cout << "»сходные элементы очереди: " << queueDouble 
-	<< endl << endl << "”далЄнные элементы: " << endl << endl;
+	cout << "Исходные элементы очереди: " << queueDouble 
+	<< endl << endl << "Удалённые элементы: " << endl << endl;
 
 	for (int i = 0; i < 5; i++)
 		cout << queueDouble.pullElement() << endl;
 
-	cout << endl << endl << "ѕосле удалени¤ элементы: " << queueDouble << endl << endl;
+	cout << endl << endl << "После удаления элементы: " << queueDouble << endl << endl;
 
 	return 0;
 }
