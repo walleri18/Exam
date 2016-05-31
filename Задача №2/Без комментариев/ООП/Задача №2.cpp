@@ -33,13 +33,13 @@ void Grafic::show()
 {
 	this->calculate();
 
-	cout << endl << "–езультаты расчЄта: Y(" << argument << ") = " 
+	cout << endl << "Результаты расчёта: Y(" << argument << ") = " 
 	<< result << endl << endl;
 }
 
 void Grafic::setArgument()
 {
-	cout << endl << "¬ведите аргумент X: ";
+	cout << endl << "Введите аргумент X: ";
 	cin >> argument;
 }
 
@@ -62,7 +62,7 @@ int main(void)
 {
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << "Ёкзаменационное задание є2" << endl << endl;
+	cout << endl << "Экзаменационное задание №2" << endl << endl;
 
 	Grafic grafic;
 

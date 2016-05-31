@@ -8,12 +8,12 @@ int main(void)
 {
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << "Ёкзаменационное задание є2" << endl << endl;
+	cout << endl << "Экзаменационное задание №2" << endl << endl;
 
 	double argument;
 	double result;
 
-	cout << endl << "¬ведите аргумент X: ";
+	cout << endl << "Введите аргумент X: ";
 	cin >> argument;
 
 	if (argument <= -2 || argument >= 2)
@@ -28,7 +28,7 @@ int main(void)
 	else
 		result = argument;
 
-	cout << endl << "–езультаты расчЄта: Y(" << argument << ") = " << result << endl << endl;
+	cout << endl << "Результаты расчёта: Y(" << argument << ") = " << result << endl << endl;
 	
 	return 0;
 }

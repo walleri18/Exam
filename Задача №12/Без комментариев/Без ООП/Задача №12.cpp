@@ -17,11 +17,11 @@ int main(void)
 
 	setlocale(LC_ALL, ".1251");
 
-	cout << endl << endl << "Ёказаменнационное задание є12" << endl << endl;
+	cout << endl << endl << "Экзаменационное задание №12" << endl << endl;
 
 	int size;
 
-	cout << "¬ведите размер массива типа INT: ";
+	cout << "Введите размер массива типа INT: ";
 	cin >> size;
 
 	int *data = new int[size];
@@ -30,7 +30,7 @@ int main(void)
 		data[i] = rand() % (100 - (-100) + 1) + (-100);
 
 	cout << endl << endl
-		<< "¬ывод несортированного массива: " << endl << endl;
+		<< "Вывод несортированного массива: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << data[i] << " ";
@@ -39,7 +39,7 @@ int main(void)
 
 	sort(data, size, '+');
 
-	cout << "ќтсортированный массив по-возростанию: " << endl << endl;
+	cout << "Отсортированный массив по-возростанию: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << data[i] << " ";
@@ -48,7 +48,7 @@ int main(void)
 
 	sort(data, size, '-');
 
-	cout << "ќтсортированный массив по-убыванию: " << endl << endl;
+	cout << "Отсортированный массив по-убыванию: " << endl << endl;
 
 	for (int i = 0; i < size; i++)
 		cout << data[i] << " ";
